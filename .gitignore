@@ -1,0 +1,10 @@
+target/
+.idea/
+.mvn/
+out/
+src/main/java/test/
+src/main/resources/org/chaoticsomeone/chaosjfx/
+
+how_to_build.txt
+mvnw
+mvnw.cmd
