@@ -8,13 +8,13 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class StageCJFX {
-	public static void initStage(Stage stage, Class applicationClass, FXMLLoader fxmlLoader, String title) throws IOException {
+	public static void initStage(Stage stage, FXMLLoader fxmlLoader, String title) throws IOException {
 		Scene scene = new Scene(fxmlLoader.load());
 		stage.setTitle(title);
 		stage.setScene(scene);
 	}
 
-	public static void initStage(Stage stage, Class applicationClass, FXMLLoader fxmlLoader, String title, int width, int height) throws IOException {
+	public static void initStage(Stage stage, FXMLLoader fxmlLoader, String title, int width, int height) throws IOException {
 		Scene scene = new Scene(fxmlLoader.load(), width, height);
 		stage.setTitle(title);
 		stage.setScene(scene);
