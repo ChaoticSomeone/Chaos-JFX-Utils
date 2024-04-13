@@ -1,6 +1,9 @@
 # Chaos JFX Utils
 A collection of utilities for JavaFX because I am lazy.
 
+**Disclaimer:** Do NOT expect regular updates on this library, it's most likely that I will only make changes or additions
+when I find some annoying tasks in JavaFX that I want to simplify into a single method.
+
 ## Classes
 
 ### StageCJFX
