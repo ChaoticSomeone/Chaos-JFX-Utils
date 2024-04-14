@@ -2,7 +2,9 @@ target/
 .idea/
 .mvn/
 out/
-src/main/resources/org/chaoticsomeone/chaosjfx/
+src/main/resources/
+custom_build/
+!custom_build/artifacts/
 
 src/main/java/org/chaoticsomeone/chaosjfx/HelloApplication.java
 src/main/java/org/chaoticsomeone/chaosjfx/HelloController.java
