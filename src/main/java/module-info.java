@@ -6,5 +6,4 @@ module org.chaoticsomeone.chaosjfx {
 	requires org.kordamp.bootstrapfx.core;
 
 	exports org.chaoticsomeone.chaosjfx;
-	exports test;
 }

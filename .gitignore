@@ -2,8 +2,10 @@ target/
 .idea/
 .mvn/
 out/
-src/main/java/test/
 src/main/resources/org/chaoticsomeone/chaosjfx/
+
+src/main/java/org/chaoticsomeone/chaosjfx/HelloApplication.java
+src/main/java/org/chaoticsomeone/chaosjfx/HelloController.java
 
 how_to_build.txt
 mvnw
