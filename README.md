@@ -4,6 +4,13 @@ A collection of utilities for JavaFX because I am lazy.
 **Disclaimer:** Do NOT expect regular updates on this library, it's most likely that I will only make changes or additions
 when I find some annoying tasks in JavaFX that I want to simplify into a single method.
 
+
+## Software Versions
+In case you wonder about the version of my software:
+- Java SDK: Adoptium Temurin 21 (v21.0.2)
+- Maven: Apache Maven 3.9.6
+
+
 ## Classes
 
 ### StageCJFX
@@ -101,8 +108,6 @@ Handles smooth movement of progress bars.
 
 	**Avoid consecutive calls!**
 
-	**Do NOT pass `null` to `onFinished`, the NullPointerException will NOT be handled!**
-
 
 - `public void play(ProgressBarTask onFinished)`
 
@@ -110,16 +115,12 @@ Handles smooth movement of progress bars.
 
   **Avoid consecutive calls!**
 
-  **Do NOT pass `null` to `onFinished`, the NullPointerException will NOT be handled!**
-
 
 - `public void playChain(double targetProgress, ProgressBarTask onFinished, ProgressBarTask next)`
 
 	Similar to `playUntil`, but this method is meant for chained / nested calls.
 	When the target progress is reached, `onFinished` is executed, followed by a call to `next`,
 	`next` should contain another call to `playChain`.
-
-  **Do NOT pass `null` to `onFinished` or `next`, the NullPointerException will NOT be handled!**
 
 
 - `public void setDelays(double minDelay, double maxDelay)`

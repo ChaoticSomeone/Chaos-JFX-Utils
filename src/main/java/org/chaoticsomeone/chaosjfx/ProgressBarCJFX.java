@@ -59,7 +59,10 @@ public class ProgressBarCJFX {
 
 						if (progress == targetProgress) {
 							timeline.stop();
-							onFinished.handle();
+
+							if (onFinished != null) {
+								onFinished.handle();
+							}
 						}
 					}
 				}));
@@ -74,8 +77,12 @@ public class ProgressBarCJFX {
 
 		public void playChain(double targetProgress, ProgressBarTask onFinished, ProgressBarTask next) {
 			playUntil(targetProgress, () -> {
-				onFinished.handle();
-				next.handle();
+				if (onFinished != null) {
+					onFinished.handle();
+				}
+				if (next != null) {
+					next.handle();
+				}
 			});
 		}
 
