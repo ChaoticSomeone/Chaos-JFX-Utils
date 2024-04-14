@@ -11,7 +11,7 @@ import java.util.Random;
 
 public class ProgressBarCJFX {
 
-	public interface ProgressBarTask {
+	public interface ProgressBarTask extends TaskCJFX {
 		public void handle();
 	}
 
