@@ -18,7 +18,7 @@ This class contains static methods to help manage your stages.
 
 Need a new window? No problem.
 
-Need to change the scene of your change? Easy.
+Need to change the scene of your stage? Easy.
 
 #### Methods
 
@@ -44,7 +44,7 @@ Need to change the scene of your change? Easy.
 
 - `public static Stage newStageWindow(FXMLLoader fxmlLoader, String title) throws IOException`
 
-	Creates a new stage, a new windows if you will, from the given FXML. Also sets the title.
+	Creates a new stage, a new window if you will, from the given FXML. Also sets the title.
 
 
 - `public static Stage newStageWindow(FXMLLoader fxmlLoader, String title, int width, int height) throws IOException`
@@ -68,14 +68,21 @@ This class contains static methods to help with getting certain properties from 
 
 
 ### ProgressBarCJFX
-This class's purpose is it to mainly handle and create smoothly moving progress bars
+This class's purpose is it to mainly handle and create smoothly moving progress bars.
 
 
 ### ProgressBarCJFX.ProgressBarTask
 Signature: `public interface ProgressBarTask`
 
 You should NOT let your classes implement this interface. Instead, this is used for passing lambdas
-to the various 'play' methods of the `ProgressBarCJFX.SmoothProgressBar` subclass.
+to the various 'play' methods of the `ProgressBarCJFX.SmoothProgressBar` class.
+
+
+#### Methods
+
+- `public void handle()`
+
+	Used internally to call the passed lambda expression
 
 
 ### ProgressBarCJFX.SmoothProgressBar
@@ -156,7 +163,7 @@ Handles smooth movement of progress bars.
 
 
 ### UtilsCJFX
-Contains stuff which I didn't fit in anywhere else
+Contains stuff which didn't fit in anywhere else
 
 #### Methods
 

@@ -50,7 +50,19 @@
 	</dependencies>
 
 	<build>
+		<directory>custom_build/output</directory>
+		<outputDirectory>custom_build/classes</outputDirectory>
+		<finalName>ChaosJFX</finalName>
+
 		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>3.4.0</version>
+				<configuration>
+					<outputDirectory>custom_build/artifacts</outputDirectory>
+				</configuration>
+			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
